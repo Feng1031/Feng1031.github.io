@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            background-color: gray;
+        }
+
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 25;
+
+        }
+
+        p {
+            color: palegreen;
+            font-size: 14pt;
+            font-weight: bold;
+
+        }
+
+        .colorchange {
+            background-color: orange;
+        }
+
+        #changecolor {
+            background-color: rgb(238, 175, 215);
+        }
+
+        /* <!--inherit--> */
+        span {
+            border: 8px solid black;
+            color: brown;
+        }
+
+        .extra span {
+            color: inherit;
+        }
+
+        li em {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        h1,
+        em {
+            font-family: fantasy;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <label>color:
+        <input type='color' autofocus />
+        (Hexadecimal code such as #ADD8E6)
+    </label>
+
+    <p>
+        <label>
+            <form action="/action_page.php">
+                <label for='date'>date:</label>
+                <input type="date" id="date" name="date">
+            </form>
+        </label>
+    </p>
+    <div>
+        <h1>
+            Email:
+            <input type="email" name="email" placeholder="name@domain.com" required>
+            (name@domain.com)
+        </h1>
+    </div>
+    <div class="extra" style="color: blue;">
+        <p>
+            <span id="changecolor">Number:</span>
+            <input type="number" id="number" name="number" min="0" max="7" value="4">
+            (Enter a number betweeen 0 and 7)
+        </p>
+    </div>
+
+    <p>
+        <span>Range:0</span>
+        <input type="range" id="range" name="range" min="0" max="20">20
+    </p>
+    <div class="colorchange">
+        <p>
+            Search:
+            <input type="search" id="search" name="search" placeholder="serach query">
+        </p>
+    </div>
+    <p>
+        Time:
+        <input type="time" id="time" name="time">(hh:mm)
+    </p>
+    <p>
+        <input type="submit" value="submit">
+        <input type="reset" value="clear">
+    </p>
+
+    <em>my name is tony</em>
+    <li><em>my name is emil</em></li>
+    <img src="peaky blinders john .jpg" alt="arthur image" />
+</body>
+
+</html>
