@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        p {
+            color: blue;
+            font-size: 14pt;
+            font-weight: bold;
+        }
+
+        .colorchange {
+            background-color: green;
+        }
+
+        #changecolor {
+            background-color: aqua;
+        }
+
+        /* <!--inherit--> */
+        span {
+            border: 2px solid black;
+            color: darkmagenta;
+        }
+
+        .extra span {
+            color: inherit;
+        }
+
+        /* conflict */
+
+        li em {
+            text-decoration: line-through;
+        }
+
+        h1,
+        em {
+            text-decoration: underline;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+
+
+    <label>color:
+        <input type='color' autofocus />
+        (Hexadecimal code such as #ADD8E6)
+    </label>
+
+    <p>
+        <label>
+            <form action="/action_page.php">
+                <label for='date'>date:</label>
+                <input type="date" id="date" name="date">
+            </form>
+        </label>
+    </p>
+
+    <p>
+        Email:
+        <input type="email" name="email" placeholder="name@domain.com" required>
+        (name@domain.com)
+    </p>
+    <div class="colorchange">
+        <p>
+            Number:
+            <input type="number" id="number" name="number" min="0" max="7" value="4">
+            (Enter a number betweeen 0 and 7)
+        </p>
+    </div>
+    <div class="extra" style="color:blue">
+        <p>
+            <span id="changecolor"> Range:0</span>
+            <input type="range" id="range" name="range" min="0" max="20">20
+        </p>
+    </div>
+    <p>
+        <span>Search:</span>
+        <input type="search" id="search" name="search" placeholder="serach query">
+    </p>
+    <p>
+        Time:
+        <input type="time" id="time" name="time">(hh:mm)
+    </p>
+    <p>
+        <input type="submit" value="submit">
+        <input type="reset" value="clear">
+    </p>
+
+    <em>go to the</em>
+
+    <li><em>not go to the</em></li>
+    <img src="peaky blinders arthur.jpg" alt="arthur image" />
+
+    <a href="page2.html">page2</a><br>
+
+</body>
+
+</html>
