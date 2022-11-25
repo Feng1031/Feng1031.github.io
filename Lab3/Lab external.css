@@ -1,0 +1,40 @@
+/* <body> needs to have four attributes: padding, font-family, color, and background-color */
+/* <ul> needs to have four attributes: top, left, width, and position */
+/* <li> needs to have four attributes: background, margin, padding, and border-right */
+
+
+body {
+    font-family: arial;
+    background-color: cornflowerblue;
+}
+
+@media screen and (min-width:560px) {
+    body {
+        background-color: darkblue;
+    }
+}
+
+nav {
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    width: 10em;
+    border: 2px solid black;
+}
+
+nav ul {
+    position: relative;
+    top: 3ex;
+    left: 2ex;
+    width: -4ex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    background-color: gray;
+    margin: 10px;
+    padding: 10px;
+    border-right: 10px;
+    width: 10em;
+}
