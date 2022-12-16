@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n1;
+        n1 = parseInt(window.prompt("Please enter your fisrstnumber"));
+        var n2;
+        n2 = parseInt(window.prompt("Please enter your secondnumber"));
+
+        if (n1 == n2) {
+            document.body.style.backgroundColor = "lightyellow";
+            document.write('fisrt number == second number');
+        } else if (n1 > n2) {
+            document.body.style.backgroundColor = "lightblue";
+            document.write('fisrt number > second number');
+        } else if (n1 < n2) {
+            document.body.style.backgroundColor = "lightgreen";
+            document.write('fisrt number < second number');
+        }
+
+
+
+    </script>
+    <input type="button" value="1st button" onclick="alert('fisrt number is ' + n1)">
+    <input type="button" value="2nd button" onclick="alert('second nuber is ' + n2)">
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
