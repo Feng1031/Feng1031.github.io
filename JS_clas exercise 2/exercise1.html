@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var n1;
+        n1 = parseInt(window.prompt("Please enter your fisrstnumber"));
+        var n2;
+        n2 = parseInt(window.prompt("Please enter your secondnumber"));
+        var n3;
+        n3 = parseInt(window.prompt("Please enter your thirdnumber"));
+        var maxvalue = maximum(n1, n2, n3);
+
+        document.writeln(
+            "<p>First number: " + n1 + "<p>" +
+            "<p>second number: " + n2 + "<p>" +
+            "<p>Third number: " + n3 + "<p>" +
+            "<p>Maximum number: " + maxvalue + "<p>");
+
+        function maxium(x, y, z) {
+            return Math.max(x, y, z);
+        }
+
+    </script>
+
+</body>
+
+</html>
